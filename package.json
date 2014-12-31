@@ -1,0 +1,30 @@
+{
+  "name": "flux-todo",
+  "version": "0.0.1",
+  "description": "Basic To-Do App",
+  "main": "js/app.js.coffee",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.12.2",
+    "underscore": "1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.2.0",
+    "coffee-script": "^1.8.0",
+    "envify": "3.0.0",
+    "react": "^0.12.0",
+    "reactify": "^0.15",
+    "watchify": "~2.1.0"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "coffee -c | browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "Aaron Dilley",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
