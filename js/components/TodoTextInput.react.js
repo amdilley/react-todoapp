@@ -28,7 +28,7 @@ var TodoTextInput = React.createClass({
           onBlur={ this._save }
           onChange={ this._onChange }
           onKeyDown={ this._onKeyDown }
-          value={ this.props.value }
+          value={ this.state.value }
           autoFocus={ true }
         />
       );
@@ -44,7 +44,7 @@ var TodoTextInput = React.createClass({
   _onChange: function (e) {
     this.setState({
       value: e.target.value
-    })
+    });
   },
 
   _onKeyDown: function (e) {

@@ -5,7 +5,7 @@ var ReactPropTypes = React.PropTypes;
 var TodoTextInput = require('./TodoTextInput.react');
 
 // actions
-var TodoActions = require('../TodoAppActions');
+var TodoActions = require('../actions/TodoAppActions');
 
 var cx = require('react/lib/cx');
 

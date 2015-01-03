@@ -5,7 +5,7 @@ var ReactPropTypes = React.PropTypes;
 var TodoItem = require('./TodoItem.react');
 
 // actions
-var TodoActions = require('../TodoAppActions');
+var TodoActions = require('../actions/TodoAppActions');
 
 var MainSection = React.createClass({
   propTypes: {
